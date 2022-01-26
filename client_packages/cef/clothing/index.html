@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../assets/css/global-theme.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+
+        <script src="../assets/js/jquery-3.2.1.js"></script>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">Clothing Menu</h1>
+                <hr />
+                <form>
+                    <div class="form-group">
+                        <label><b>Current Selected Clothing Item:</b></label><br />
+                        <label id="current-item">Masks</label>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Current Selected Component Number:</b></label><br />
+                        <label id="current-component">0</label>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Current Selected Texture:</b></label><br />
+                        <label id="current-texture">0</label>
+                    </div>
+                    <div class="form-group">
+                        <label><b>Current Selected Palette:</b></label><br />
+                        <label id="current-palette">0</label>
+                    </div>
+                    <hr />
+
+                    <h3>Selection</h3>
+                    <button type="button" id="itemBtn" class="btn btn-primary" onclick="selectItems();">Items</button>
+                    <button type="button" id="componentBtn" class="btn btn-secondary" onclick="selectComponents();">Components</button>
+                    <button type="button" id="textureBtn" class="btn btn-secondary" onclick="selectTextures();">Textures</button>
+                    <button type="button" id="paletteBtn" class="btn btn-secondary" onclick="selectPalettes();">Palettes</button>
+                    <br />
+                    <hr />
+                    <small>Press the LEFT and RIGHT arrow keys to cycle through options</small>
+                    <button type="button" id="loginBtn" class="btn btn-danger" onclick="previous();">PREVIOUS</button>
+                    <button type="button" id="loginBtn" class="btn btn-success" onclick="next();">NEXT</button>
+                </form>
+            </div>
+		</div>
+		
+        <script src="main.js"></script>
+    </body>
+</html>
